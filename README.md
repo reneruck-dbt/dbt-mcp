@@ -51,17 +51,17 @@ After going through [Setup](#setup), you can use your server with an MCP client.
 This configuration will be added to the respective client's config file:
 
 ```json
-{
-  "mcpServers": {
-    "dbt": {
-      "command": "<path-to-this-directory>/.venv/bin/mcp",
-      "args": [
-        "run",
-        "<path-to-this-directory>/src/dbt_mcp/main.py"
-      ]
-    }
-  }
-}
+ {
+     "mcpServers": {
+       "dbt-mcp": {
+         "command": "/Users/<YOUR USERNAME>dbt-mcp/.venv/bin/mcp",
+         "args": [
+           "run",
+           "/Users/<YOUR USERNAME>/.dbt-mcp/.venv/lib/python3.12/site-packages/dbt_mcp/main.py"
+         ]
+       }
+     }
+   }
 ```
 Be sure to replace `<path-to-this-directory>`
 
